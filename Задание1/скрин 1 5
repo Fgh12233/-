@@ -1,1 +1,2 @@
-
+def list_sort(lst):
+    return sorted(lst, key=abs, reverse=True)
