@@ -1,1 +1,7 @@
-
+def all_eq(lst):
+max_len = len(max(lst, key=len))
+new_lst = []  
+for string in lst:
+    padding = max_len - len(string)  
+    new_lst.append(string + '_' * padding) 
+return new_lst
