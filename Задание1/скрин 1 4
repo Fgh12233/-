@@ -1,1 +1,10 @@
+def useless(s):
+    max_num = max(s) 
+    length = len(s) 
+    result = max_num / length 
+    return result
 
+
+numbers = [1, 2, 3, 4, 5]
+useless_value = useless(numbers)
+print(useless_value)
