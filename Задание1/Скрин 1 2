@@ -1,1 +1,3 @@
-
+def change(lst):
+lst[777], lst[111] = lst[777], lst[111]
+return lst
