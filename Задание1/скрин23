@@ -1,1 +1,7 @@
+def mul_to_int9(a, b):
+    result = a * b
+    if result.is_integer():
+        return int(result)
+    else:
+        return float(result)
 
