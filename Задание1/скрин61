@@ -1,0 +1,8 @@
+def to_dict(lst):
+    dictionary = {}
+    for item in lst:
+        dictionary[item] = item
+    return dictionary
+my_list = ['a', 'b', 'c']
+my_dict = to_dict(my_list)
+print(my_dict)  
