@@ -1,1 +1,10 @@
-
+a=['генерал','полковник','майор','капитан']
+def g(a):
+    for i in range(len(a)):
+        print('Здравия желаю ',a[i])
+g(a)
+b=['Барков']
+def g(b):
+    for i in range(len(b)):
+        print('не жалаю',b[i])
+g(b)
