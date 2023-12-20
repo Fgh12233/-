@@ -1,0 +1,12 @@
+def cleaned_str(st):
+    result = ''
+    for char in st:
+        if char == '@' and result:
+            result = result[:-1] 
+        else:
+            result += char
+    return result
+
+st = 'сигмм@п@а свяя@а@зь'
+cleaned = cleaned_str(st)
+print(cleaned)
