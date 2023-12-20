@@ -1,1 +1,10 @@
-
+def multiply_numbers(numbers_string):
+    numbers = numbers_string.split(", ")
+    numbers = [int(num) for num in numbers]
+    product = 1
+    for num in numbers:
+        product *= num
+    return product
+numbers_string = "6, 6, 6"
+result = multiply_numbers(numbers_string)
+print(result)
