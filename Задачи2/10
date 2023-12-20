@@ -1,1 +1,11 @@
+def create_points_array(x_coords, y_coords):
+    points = []
+    for i in range(len(x_coords)):
+        point = (x_coords[i], y_coords[i])
+        points.append(point)
+    return points
+x_coords = [1, 2, 3, 4, 5]
+y_coords = [6, 7, 8, 9, 10]
+points_array = create_points_array(x_coords, y_coords)
+print(points_array)
 
