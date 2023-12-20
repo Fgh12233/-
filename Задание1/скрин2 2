@@ -1,4 +1,6 @@
 def avg_5(a, b, c, d):
     avg = (a + b + c + d) / 4
     return round(avg, 5)
+result = avg_5(1, 2, 3, 4)
+print(result)  
 
