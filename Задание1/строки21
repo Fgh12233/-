@@ -1,0 +1,9 @@
+import re
+
+def shortener(st):
+    pattern = r'\([^)]*\)'
+    result = re.sub(pattern, '', st)
+    return result
+text = 'ууууу (текст) сигма (некоторыми (вложенными) связь)'
+clean_text = shortener(text)
+print(clean_text)
