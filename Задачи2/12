@@ -1,1 +1,7 @@
-
+def check_duplicate(word):
+    for i in range(len(word)-1):
+        if word[i] == word[i+1]:
+            return True
+    return False
+print(check_duplicate("hello"))
+print(check_duplicate("world"))  
