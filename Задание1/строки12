@@ -1,0 +1,19 @@
+def first_last(letter, st):    
+    first_index = None
+    last_index = None
+    for i in range(len(st)):
+        if st[i] == letter:
+            if first_index is None:
+                first_index = i
+            last_index = i
+    
+    return (first_index, last_index)
+st = "abcdefg"
+letter = "c"
+result = first_last(letter, st)
+print(result) 
+
+st = "abcdefg"
+letter = "z"
+result = first_last(letter, st)
+print(result)  
