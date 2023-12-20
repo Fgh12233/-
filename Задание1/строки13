@@ -1,1 +1,15 @@
+def top3(st):
+    char_count = {}
+    for char in st:
+        if char != ' ':
+            if char in char_count:
+                char_count[char] += 1
+            else:
+                char_count[char] = 1
+    sorted_chars = sorted(char_count.items(), key=lambda x: x[1], reverse=True)
+    return ', '.join([f'{char} - {count}' for char, count in sorted_chars[:3]])
+st = "Hello, world!"
+result = top3(st)
+print(result)
+
 
