@@ -1,1 +1,8 @@
+def fix_spaces(string):
+    words = string.split()
+    fixed_string = ' '.join(words)
+    return fixed_string
+string = "   В   строке  были   добавлены   лишние   пробелы   "
+fixed_string = fix_spaces(string)
+print(fixed_string) 
 
