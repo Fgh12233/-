@@ -1,1 +1,11 @@
+message = input("Введите сообщение: ")
+button_presses = {'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5, 'F': 6, 'G': 7} 
+
+for letter in message:
+    letter = letter.upper()  
+    if letter in button_presses:
+        presses = button_presses[letter]
+        print("Нажимайте кнопку", presses, "раз для написания буквы", letter)
+    else:
+        print("Для буквы", letter, "нет значения в словаре.")
 
