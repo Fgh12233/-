@@ -1,1 +1,12 @@
+def calculate_total_volume(boxes):
+    total_volume = 0
+    for box in boxes:
+        length, width, height = box
+        box_volume = length * width * height
+        total_volume += box_volume
+    return total_volume
+boxes = [    (1, 2, 3),    (6, 6, 6),    (5, 5, 5)]
+
+total_volume = calculate_total_volume(boxes)
+print("V:", total_volume)
 
