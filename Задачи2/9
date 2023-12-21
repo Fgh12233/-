@@ -1,1 +1,6 @@
-
+def remove_enemies(names, enemies):
+return [name for name in names if name not in enemies]
+names = ["Alice", "Bob", "Charlie", "David"]
+enemies = ["Bob", "David"]
+filtered_names = remove_enemies(names, enemies)
+print(filtered_names) 
