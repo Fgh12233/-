@@ -1,1 +1,7 @@
-
+def accumulated_array(numbers):
+accumulated = []
+total = 0
+for num in numbers:
+total += num
+accumulated.append(total)
+return accumulated
