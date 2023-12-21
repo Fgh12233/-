@@ -1,1 +1,20 @@
+def hacker_encode(string):
+    encoded_string = ""
+    for char in string:
+        if char.lower() == 'a':
+            encoded_string += '4'
+        elif char.lower() == 'e':
+            encoded_string += '3'
+        elif char.lower() == 'i':
+            encoded_string += '1'
+        elif char.lower() == 'o':
+            encoded_string += '0'
+        elif char.lower() == 's':
+            encoded_string += '5'
+        else:
+            encoded_string += char
+    return encoded_string
+string = "Hello World"
+encoded_string = hacker_encode(string)
+print(encoded_string)  
 
