@@ -1,1 +1,25 @@
+def play_rock_paper_scissors(player1, player2):
+    if player1 == player2:
+        return "Ничья!"
+    elif (
+        (player1 == "камень" and player2 == "ножницы")
+        or (player1 == "ножницы" and player2 == "бумага")
+        or (player1 == "бумага" and player2 == "камень")
+    ):
+        return "Игрок 1 выиграл!"
+    elif (
+        (player2 == "камень" and player1 == "ножницы")
+        or (player2 == "ножницы" and player1 == "бумага")
+        or (player2 == "бумага" and player1 == "камень")
+    ):
+        return "Игрок 2 выиграл!"
+    else:
+        return "Ошибка! Введите правильные значения: 'камень', 'ножницы' или 'бумага'."
+winner = play_rock_paper_scissors("камень", "ножницы")
+print(winner) 
+
+winner = play_rock_paper_scissors("бумага", "бумага")
+print(winner)
+winner = play_rock_paper_scissors("ножницы", "камень")
+print(winner) 
 
