@@ -1,0 +1,11 @@
+def check_blackjack(cards):
+    total = sum(cards)
+
+    if total > 21:
+        return True
+    else:
+        return False
+hand = [10, 9, 2] 
+
+result = check_blackjack(hand)
+print(result) 
