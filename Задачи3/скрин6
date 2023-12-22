@@ -1,0 +1,20 @@
+def convert_time(time):
+    if time[-2:] == "AM":
+        if time[:2] == "12":
+            return "00" + time[2:-2]
+        else:
+            return time[:-2]
+    elif time[-2:] == "PM":
+        if time[:2] == "12":
+            return time[:-2]
+        else:
+            return str(int(time[:2]) + 12) + time[2:-2]
+
+
+time_12h = input("Введите время в 12-часовом формате: ")  
+time_24h = convert_time(time_12h)
+print("Время в 24-часовом формате:", time_24h) 
+
+time_24h = input("Введите время в 24-часовом формате: ") 
+time_12h = convert_time(time_24h)
+print("Время в 12-часовом формате:", time_12h)  
