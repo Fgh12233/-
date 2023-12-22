@@ -1,1 +1,9 @@
+def replace_multiple_exclamation_and_question_marks(string):
+    while string.endswith("??") or string.endswith("!!"):
+        string = string[:-1]
+    return string
+text = "Барков пет!!!"
+updated_text = replace_multiple_exclamation_and_question_marks(text)
+print(updated_text)
+
 
