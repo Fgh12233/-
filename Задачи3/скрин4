@@ -1,1 +1,16 @@
+def sum_numbers(string):
+numbers_sum = 0
+current_number = 0
+for char in string:
+    if char.isdigit():
+        current_number = current_number * 10 + int(char)
+    else:
+        numbers_sum += current_number
+        current_number = 0
 
+numbers_sum += current_number
+
+return numbers_sum
+string = "abc123def45ghi6"
+result = sum_numbers(string)
+print(result)
