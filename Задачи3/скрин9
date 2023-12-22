@@ -1,0 +1,14 @@
+def count_happy_numbers(length):
+    count = 0
+    for num in range(10**(length-1), 10**length):
+        num_str = str(num)
+        mid = len(num_str) // 2
+        left = num_str[:mid]
+        right = num_str[mid:]
+        left_sum = sum(map(int, left))
+        right_sum = sum(map(int, right))
+        if left_sum == right_sum:
+            count += 1
+
+    return count
+print(count_happy_numbers(4))
