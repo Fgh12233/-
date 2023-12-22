@@ -1,0 +1,14 @@
+def is_surrounded_by_pluses(string):
+    for i in range(len(string)):
+        if string[i].isalpha():
+            if i == 0 or i == len(string)-1 or string[i-1] != '+' or string[i+1] != '+':
+                return False
+    return True
+>>> print(is_surrounded_by_pluses("++++a++++"))
+True
+
+>>> print(is_surrounded_by_pluses("+a+++"))
+False
+
+>>> print(is_surrounded_by_pluses("++++++++"))
+False
