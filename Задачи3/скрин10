@@ -1,1 +1,15 @@
+def can_evenly_distribute_coins(coins, num_children):
+    if coins <= 0 or num_children <= 0:
+        return False
+    if coins % num_children == 0:
+        return True
+    else:
+        return False
+num_coins = 10
+num_children = 3
+
+if can_evenly_distribute_coins(num_coins, num_children):
+    print("Монеты могут быть поровну распределены между детьми.")
+else:
+    print("Монеты не могут быть поровну распределены между детьми.")
 
