@@ -1,1 +1,10 @@
+def dislike_6(a):
+   if a == 6:
+       if type(a) == int or type(a) == float:
+           return "Только не б!"
+       return True
+print(dislike_6(5)) 
+print(dislike_6(6)) 
+print(dislike_6(6.0)) 
+
 
