@@ -1,1 +1,20 @@
+def camel(st):
+    result = ""
+    toggle = True
+
+    for c in st:
+        if not c.isspace() and not c.isalnum():
+            result += c
+        else:
+            if toggle:
+                result += c.upper()
+            else:
+                result += c.lower()
+            toggle = not toggle
+
+    return result
+text = "Просто фраза, которая будет показывать заглавные и маленькие буквы !"
+result = camel(text)
+print(result)  
+
 
