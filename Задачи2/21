@@ -1,10 +1,11 @@
-def median(arr):
-    sorted_arr = sorted(arr)
-    n = len(sorted_arr)
-    if n % 2 == 0:
-        return (sorted_arr[n//2-1] + sorted_arr[n//2]) / 2
+def median(array):
+    sorted_array = sorted(array)
+    n = len(sorted_array)
+    if n % 2 == 1:
+        return sorted_array[n // 2]
     else:
-        return sorted_arr[n//2]
-    arr = [5, 2, 1, 6, 3, 4] 
-    print(median(arr))
+        return (sorted_array[n // 2 - 1] + sorted_array[n // 2]) / 2
+numbers = [5, 2, 7, 3, 8, 4, 1, 6]
+result = median(numbers)
 
+print(result) 
