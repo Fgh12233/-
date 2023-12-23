@@ -3,3 +3,10 @@ def search_substr(subst, st):
         return "Есть контакт!"
     else:
         return "Мимо!"
+s1 = "Hello, World!"
+s2 = "world"
+print(search_substr(s2, s1)) 
+
+s3 = "Python is awesome!"
+s4 = "Java"
+print(search_substr(s4, s3)) 
