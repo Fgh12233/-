@@ -1,2 +1,6 @@
 def list_sort(lst):
-    return sorted(lst, key=abs, reverse=True)
+    sorted_lst = sorted(lst, key=lambda x: abs(x), reverse=True)
+    return sorted_lst
+numbers = [5, -10, 3, -2, 1]
+sorted_numbers = list_sort(numbers)
+print(sorted_numbers)
