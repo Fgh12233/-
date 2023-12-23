@@ -1,5 +1,4 @@
 def to_list(*args):
     return list(args)
-result = to_list(1,2,3,4)
-print(result) 
-
+result = to_list(1, 2, 3, "abc", [4, 5])
+print(result)  
