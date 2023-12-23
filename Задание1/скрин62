@@ -1,7 +1,7 @@
 def biggest_dict(**kwargs):
-global my_dict
-for key, value in kwargs.items():
-my_dict[key] = value
-return my_dict
+    global my_dict
+    for key, value in kwargs.items():
+        my_dict[key] = value
+        return my_dict
 my_dict = {"first_one": "we can do it"}
 print(biggest_dict(key1="value1", key2="value2"))
