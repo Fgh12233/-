@@ -1,0 +1,7 @@
+
+my_dict = {'element1': 1, 'element2': 2, 'element3': 3, 'element4': 4, 'element5': 5}
+first_key, last_key = list(my_dict.keys())[0], list(my_dict.keys())[-1]
+my_dict[last_key] = my_dict.pop(first_key)
+del my_dict[list(my_dict.keys())[1]]
+my_dict['new_key'] = 'new_value'
+print(my_dict)
