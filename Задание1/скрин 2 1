@@ -3,3 +3,7 @@ def to_float(num):
         return float(num)
     else:
         return "Невозможно преобразовать"
+print(to_float(10))  
+print(to_float(3.14)) 
+print(to_float("5"))  
+print(to_float("abc"))  
