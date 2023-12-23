@@ -1,10 +1,10 @@
 def all_eq(lst):
-max_len = len(max(lst, key=len))
-new_lst = []  
-for string in lst:
-    padding = max_len - len(string)  
+    max_len = len(max(lst, key=len))
+    new_lst = []  
+    for string in lst:
+        padding = max_len - len(string)  
     new_lst.append(string + '_' * padding) 
-return new_lst
+    return new_lst
 lst = ["abc", "defg", "hijk", "lmnopq"]
 new_lst = all_eq(lst)
-print(new_lst)  # выводит ['abc__', 'defg_', 'hijk', 'lmnopq']
+print(new_lst)  
