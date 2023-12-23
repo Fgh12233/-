@@ -1,0 +1,18 @@
+def help_book(letter):
+    if letter == 'к':
+        return "Ассоциативность: (a and b) and c = a and (b and c)"
+    elif letter == 'а':
+        return "Дистрибутивность: a and (b or c) = (a and b) or (a and c)"
+    elif letter == 'д':
+        return "Коммутативность: a and b = b and a"
+    elif letter == 'м':
+        return "Правило де Моргана: not (a and b) = (not a) or (not b) and not (a or b) = (not a) and (not b)"
+    else:
+        return "Пожалуйста, выберите одну из следующих букв: к, а, д, м"
+
+print(help_book('к'))
+print(help_book('а'))
+print(help_book('д'))
+print(help_book('м'))
+print(help_book('x'))
+
