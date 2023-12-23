@@ -1,16 +1,8 @@
-def sum_numbers(string):
-numbers_sum = 0
-current_number = 0
-for char in string:
-    if char.isdigit():
-        current_number = current_number * 10 + int(char)
-    else:
-        numbers_sum += current_number
-        current_number = 0
+import re
 
-numbers_sum += current_number
-
-return numbers_sum
-string = "abc123def45ghi6"
-result = sum_numbers(string)
-print(result)
+def sum_of_numbers(s):
+    numbers = re.findall('\d+', s) 
+    total_sum = sum(map(int, numbers))  
+    return total_sum
+s = "chbleuahh3966n 36wo 6wo6 3w84 6w 65w6 7oq756q5q5235cnb3t28yqy 3"
+print(sum_of_numbers(s))  
