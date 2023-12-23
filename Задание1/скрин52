@@ -1,0 +1,6 @@
+def list_sort(List):
+    sorted_list = sorted(List, key=abs, reverse=True)
+    return sorted_list
+numbers = [3, -5, 1, -7, 2]
+sorted_numbers = list_sort(numbers)
+print(sorted_numbers) 
