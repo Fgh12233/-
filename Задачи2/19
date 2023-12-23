@@ -1,7 +1,10 @@
-def accumulated_array(numbers):
-accumulated = []
-total = 0
-for num in numbers:
-total += num
-accumulated.append(total)
-return accumulated
+a=[2,4,6]
+def b(a):
+    h=8
+    m=[]
+    for i in range(len(a)):
+        t=a[i]
+        h+=t
+        m.append(h)
+    print(m)
+b(a)
